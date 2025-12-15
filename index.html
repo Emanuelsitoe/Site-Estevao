@@ -67,7 +67,7 @@
                     </ul>
                 </div>
                 <div class="bio-img hidden">
-                    <img src="1765044007247.jpg" alt="Maestro Regendo">
+                    <img src="estevao.jpg" alt="Maestro Regendo">
                 </div>
             </div>
         </div>
@@ -146,7 +146,6 @@
                             data-inst="Coros de Câmara e Geral da Escola Superior de Musica de Lisboa, dirigida por Alexandra Neves." 
                             data-audio ="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1935690209&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                             >
-                            
                             Ver <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -203,33 +202,43 @@
             <div class="music-wrapper hidden">
                 <div class="track-list">
                     <div class="track-item">
-                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                        <div class="play-btn"><i class="fas fa-music"></i></div>
                         <div class="track-info">
                             <h5>Noturno em Dó Menor (Arranjo Piano)</h5>
                             <span>04:32</span>
                         </div>
                     </div>
                     <div class="track-item">
-                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                        <div class="play-btn"><i class="fas fa-music"></i></div>
                         <div class="track-info">
                             <h5>Prelúdio para Cordas (Original)</h5>
                             <span>06:15</span>
                         </div>
                     </div>
                     <div class="track-item">
-                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                        <div class="play-btn"><i class="fas fa-music"></i></div>
                         <div class="track-info">
                             <h5>Tema de Filme: "Horizonte" (Trilha Sonora)</h5>
                             <span>03:45</span>
                         </div>
                     </div>
                 </div>
-                <div class="spotify-link">
-                    <a href="#" class="btn btn-spotify"><i class="fab fa-spotify"></i> Ouvir no Spotify</a>
+                
+                <div class="music-player" style="text-align: center; margin-top: 20px;" id="openModalBtn">
+                    <button class="btn btn-spotify" style="background: var(--dark); color: var(--gold);"><i class="fas fa-music"></i> Ouvir</button></a>
                 </div>
             </div>
         </div>
     </section>
+
+    <article class="modal-playlist">
+        <div class="modal-content-playlist">
+            <span class="close-playlist-btn">&times;</span>
+            <h3>Músicas</h3>
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div class="elfsight-app-1651bd4c-26e2-4ecb-95cb-02ef4c6b4c0b" data-elfsight-app-lazy></div>
+        </div>
+    </article>
 
     <section id="awards" class="section bg-dark text-light">
         <div class="container">
@@ -269,7 +278,7 @@
                         <input type="text" name="Nome" placeholder="Seu Nome" required>
                         <input type="email"  name="Email" placeholder="Seu E-mail" required>
                     </div>
-                    <input type="text" placeholder="Assunto (Ex: Encomenda de Obra, Concerto)" required>
+                    <input type="text" name="Assunto" placeholder="Assunto (Ex: Encomenda de Obra, Concerto)" required>
                     <textarea placeholder="Sua mensagem..." name="Mensagem" rows="5" required></textarea>
                     <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                     <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">

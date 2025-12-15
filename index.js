@@ -42,11 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if(target){
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
+            const targetID = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetID);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
@@ -132,3 +131,26 @@ document.addEventListener('keydown', (e) => {
         closeModal();
     }
 });
+
+// --- Lógica da Modal de Playlist ---
+// Cole o JavaScript da Seção 3 aqui
+        const modal1 = document.querySelector('.modal-playlist');
+        const openModalBtn = document.getElementById('openModalBtn');
+        const closeBtn = document.querySelector('.close-playlist-btn');
+
+        // Inicialmente, esconde a modal no carregamento
+        modal1.style.display = 'none';
+
+        openModalBtn.onclick = function() {
+            modal1.style.display = 'flex';
+        }
+
+        closeBtn.onclick = function() {
+            modal1.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal1.style.display = 'none';
+            }
+        }
