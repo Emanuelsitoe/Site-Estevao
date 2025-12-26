@@ -103,7 +103,7 @@ ul { list-style: none; }
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('Screenshot_20251208_203641.jpg') no-repeat top center/cover;
+    background: url('../img/backgroundinicial.jpg') no-repeat top center/cover;
     position: top;
     display: flex;
     align-items: center;
