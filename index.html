@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maestro & Compositor</title>
+    <title>Estêvão Chissano</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -12,10 +12,9 @@
     <link rel="shortcut icon" href="img/logo/logoEstevao.jpg" type="image/x-icon">
 </head>
 <body>
-
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Estêvão <span>Chissano</span></a>
+            <a href="index.html" class="logo">Estêvão <span>Chissano</span></a>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -25,68 +24,125 @@
                 <li><a href="#home" class="nav-link">Início</a></li>
                 <li><a href="#biography" class="nav-link">Biografia</a></li>
                 <li><a href="#compositions" class="nav-link">Composições</a></li>
-                <li><a href="#music" class="nav-link">Músicas & Arranjos</a></li>
-                <li><a href="#awards" class="nav-link">Prémios</a></li>
+                <li><a href="" class="nav-link">Galeria</a></li>
+                <li><a href="" class="nav-link">Eventos</a></li>
                 <li><a href="#contact" class="nav-link btn-contact">Contato</a></li>
             </ul>
         </div>
     </nav>
 
     <header id="home" class="hero">
+        <div class="hero-slideshow">
+            <div class="slide" style="background-image: url('img/backgroundinicial.jpg');"></div>
+            <div class="slide" style="background-image: url('img/fundo1.jpg');"></div>
+            <div class="slide" style="background-image: url('img/fundo3.jpg');"></div>
+        </div>
+
         <div class="hero-overlay"></div>
-        <div class="hero-content hidden">
-            <div class="hero-image-container">
-                <!--img src="1746816139204.jpg" alt="Foto do Compositor" class="profile-img"-->
-            </div>
-            <h1>Harmonia entre o Clássico e o Contemporâneo</h1>
-            <p>"Comunicar a alma através da música Clássica"</p>
-            <div class="hero-btns">
+
+        <div class="hero-content">
+            <h1 class="reveal"></h1>
+            <p class="reveal"></p>
+            
+            <div class="hero-btns reveal">
                 <a href="#compositions" class="btn btn-primary">Minhas Obras</a>
                 <a href="#biography" class="btn btn-outline">Minha História</a>
             </div>
         </div>
+        
+        <div class="scroll-indicator"></div>
     </header>
 
     <section id="biography" class="section">
         <div class="container">
-            <h2 class="section-title hidden">Trajetória</h2>
+            <h2 class="section-title hidden">Biografia</h2>
             <div class="bio-grid">
                 <div class="bio-text hidden">
-                    <h3>Uma vida dedicada à música</h3>
-                    <p>Nascido em 1994, é membro do Xiquitsi desde 2014 nas classes de Coro, Composição e Direcção. No Coro, teve orientação de Maria Guimarães, Carlos Pereira, Lunathi Ncamani, Kendra Balmer e Ágata Ricca e participou em workshops orientados por Sara Braga Simões, Job Tomé, Martin Berger, Maria João, Lenna Bahule. Na Direcção estudou com Cesário Costa, José Eduardo Gomes, Cláudio Pereira, David Gómez, Ângelo Rafael e Eduardo Torres. Iniciou a Composição com Daniel Moreira e Filipe Fernandes e teve contacto com Carlos Marecos, Luís Tinoco, Sérgio Azevedo, Carlos Caires, Jaime Reis e Roberto Pérez.
+                    <h3>Estêvão Chissano</h3>
+                    <p>Estêvão Chissano, nascido em 1994, é membro do Xiquitsi desde 2014 nas classes de Coro, Composição e Direcção. No Coro, teve orientação de Maria Guimarães, Carlos Pereira, Lunathi Ncamani, Kendra Balmer e Ágata Ricca e participou em workshops orientados por Sara Braga Simões, Job Tomé, Martin Berger, Maria João, Lenna Bahule. Na Direcção estudou com Cesário Costa, José Eduardo Gomes, Cláudio Pereira, David Gómez, Ângelo Rafael e Eduardo Torres. Iniciou a Composição com Daniel Moreira e Filipe Fernandes e teve contacto com Carlos Marecos, Luís Tinoco, Sérgio Azevedo, Carlos Caires, Jaime Reis e Roberto Pérez.
 
                     Realizou residências artísticas como beneficiário da Bolsa de Viagem do PROCULTURA em Portugal, Brasil e Cabo Verde. Foi indicado pelo Instituto Camões de Maputo para participar na 4ª Edição do Programa Jovens Compositores — Estúdios Vítor Córdona em Lisboa. Participou no 8th Sterkfontein Composers Meeting em África do Sul sob orientação de Michael Blake, que posteriormente o convidou para contribuir com uma peça para o seu projecto discográfico Bow Project 2 – Bowscapes – In memory of Jürgen Bräuninger.
-
                     As suas composições têm sido apresentadas no Japão, Brasil, Reino Unido, Portugal, Noruega, África do Sul e Cabo Verde, bem como nas Temporadas de Música Clássica em Maputo. Actualmente é Coordenador Artístico/Pedagógico do Xiquitsi e professor de Formação Musical.</p>
                     <ul class="bio-stats">
                         <li><strong></strong> Composições</li>
-                        <li><strong></strong> Países em Turnê</li>
-                        <li><strong></strong> Álbuns de Estúdio</li>
                     </ul>
                 </div>
-                <div class="bio-img hidden">
-                    <img src="img/estevao.jpg" alt="Maestro Regendo">
+                <div class="bio-container">
+                    <div class="bio-img">
+                        <img src="img/estevao.jpg" alt="Estêvão Chissano">
+                        
+                        <div class="autordafoto">
+                            
+                            <p><div class="copy" style="font-size: 1em;">&copy </div><span style="color: #d4af37;"> Júlio Dengucho</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="video-sobre">
-    <p></p>
-    <div class="video-wrapper">
-        <iframe 
-            src="https://www.youtube.com/embed/hypIKqWs8ts?si=nlyvZZ7Qr6XcVTOe"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
-    </div>
-</div>
+    <section class="entrevistas-container">
+        <div class="section-header">
+            <div class="title-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                <h2>Entrevistas</h2>
+            </div>
+            <p></p>
+        </div>
+
+        <div class="video-grid" id="videoGrid">
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5jDTCFtwijU?si=ZODIYjHsbAKormNe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <!--<div class="video-info">
+                    <h3>Entrevista com a DW</h3>
+                    <p>Descrição</p>
+                </div>-->
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/hypIKqWs8ts" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <!--<div class="video-info">
+                    <h3>Entrevista com a DW</h3>
+                    <p>Descrição</p>
+                </div>-->
+            </div>
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QhD-InBbM-k?si=LVzZui95gjcewPTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <!--<div class="video-info">
+                    <h3>Entrevista com a DW</h3>
+                    <p>Descrição</p>
+                </div>-->
+            </div>
+
+            <div class="video-card hidden-video">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QhD-InBbM-k?si=LVzZui95gjcewPTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <!--<div class="video-info">
+                    <h3>Entrevista com a DW</h3>
+                    <p>Descrição</p>
+                </div>-->
+            </div>
+            
+            
+        </div>
+
+            <div class="btn-container">
+                <button id="loadMoreBtn" class="btn-ver-mais">
+                    Ver Mais Entrevistas
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+            </div>
+    </section>
 
     <section id="compositions" class="section bg-light">
         <div class="container">
-            <h2 class="section-title hidden">Composições Selecionadas</h2>
+            <h2 class="section-title hidden">Composições</h2>
             <div class="cards-grid">
                 <div class="card hidden">
                     <div class="card-header">Para Orquestra de Cordas</div>
@@ -110,7 +166,7 @@
                     </div>
                 </div>
                 <div class="card hidden">
-                    <div class="card-header">Concerto para Piano</div>
+                    <div class="card-header">Piano</div>
                     <div class="card-body">
                         <h4>"Mihloti-Lágrimas"</h4>
                         <p class="meta">Solista : Silvia Belfiore | 2025</p>
@@ -126,10 +182,12 @@
                             data-inst="Piano">
                             Ver<i class="fas fa-arrow-right"></i>
                         </a>
+                        
                     </div>
+                    
                 </div>
                 <div class="card hidden">
-                    <div class="card-header">Coral & Voz</div>
+                    <div class="card-header">Coro</div>
                     <div class="card-body">
                         <h4>"A soul is like a bird"</h4>
                         <p class="meta">Coros de Câmara e Geral da Escola Superior de Musica de Lisboa <br>Direcção Coral: Alexandra Neves </p>
@@ -148,6 +206,9 @@
                         </a>
                     </div>
                 </div>
+                <span class="vermais">
+                    <a href="">Ver mais composições </a> <i class="fas fa-arrow-right"></i>
+                </span>
             </div>
         </div>
     </section>
@@ -190,13 +251,13 @@
                 <button class="btn btn-outline-dark close-trigger">Fechar</button>
             </div>
         </div>
-
         
     </div>
+    
 
     <section id="music" class="section">
         <div class="container">
-            <h2 class="section-title hidden">Músicas & Arranjos</h2>
+            <h2 class="section-title hidden">Músicas</h2>
             <div class="music-wrapper hidden">
                 <div class="track-list">
                     <div class="track-item">
@@ -245,8 +306,8 @@
                 <div class="award-item">
                     <div class="year">2024</div>
                     <div class="award-desc">
-                        <h4>Prêmio de Composição António Fragoso</h4>
-                        <p>descricao</p>
+                        <h4>Prémio de Composição António Fragoso</h4>
+                        <p></p>
                     </div>
                 </div>
                 <!--<div class="award-item">

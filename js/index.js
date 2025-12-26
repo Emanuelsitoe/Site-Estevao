@@ -154,3 +154,14 @@ document.addEventListener('keydown', (e) => {
                 modal1.style.display = 'none';
             }
         }
+
+document.getElementById('loadMoreBtn').addEventListener('click', function() {
+    const hiddenVideos = document.querySelectorAll('.hidden-video');
+    
+    hiddenVideos.forEach(video => {
+        video.style.display = 'block'; // Mostra os vídeos
+    });
+
+    // Remove o botão após carregar tudo (opcional)
+    this.style.display = 'none';
+});
