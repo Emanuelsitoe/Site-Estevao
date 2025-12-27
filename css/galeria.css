@@ -11,6 +11,11 @@
     --gold: #ac8641;
     --grey: #2c2c2c;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
