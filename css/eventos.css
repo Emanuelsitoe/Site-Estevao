@@ -1,0 +1,175 @@
+.calendar-section {
+    padding: 100px 0;
+    background-color: var(--bg-black);
+    color: var(--white);
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Timeline Container */
+.events-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Event Card */
+.event-item {
+    display: flex;
+    align-items: center;
+    background: var(--card-bg);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    padding: 30px;
+    gap: 40px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.event-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: var(--gold);
+    transform: scaleY(0);
+    transition: transform 0.4s ease;
+}
+
+.event-item:hover {
+    transform: translateX(10px);
+    border-color: var(--gold);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.event-item:hover::before {
+    transform: scaleY(1);
+}
+
+/* Date Box */
+.event-date-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    height: 100px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+}
+
+.event-date-box .day {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event-date-box .month {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Main Content */
+.event-main-content {
+    flex-grow: 1;
+}
+
+.event-category {
+    color: var(--gold);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.event-main-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-family: var(--font-serif);
+}
+
+.event-meta-grid {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 15px;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+.meta-unit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.meta-unit svg {
+    color: var(--gold);
+}
+
+.event-description {
+    color: var(--text-gray);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Button */
+.btn-ticket {
+    padding: 12px 25px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.btn-ticket:hover {
+    background: var(--gold);
+    color: black;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .event-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        text-align: left;
+    }
+    
+    .event-date-box {
+        flex-direction: row;
+        gap: 10px;
+        min-width: auto;
+        height: auto;
+        border: none;
+        padding: 0;
+        color: var(--gold);
+    }
+
+    .event-date-box .day { font-size: 1.5rem; }
+    
+    .event-meta-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .event-cta {
+        width: 100%;
+    }
+    
+    .btn-ticket {
+        display: block;
+        text-align: center;
+    }
+}
