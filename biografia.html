@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/logo/logo (2).jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/biografia.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Estêvão <span>Chissano</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="biografia.html" class="nav-link">Biografia</a></li>
+                <li><a href="#compositions" class="nav-link">Composições</a></li>
+                <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                <li><a href="eventos.html" class="nav-link">Eventos</a></li>
+                <li><a href="#contact" class="nav-link btn-contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="biography" class="section">
+        <div class="container">
+            <h2 class="section-title hidden">Biografia</h2>
+            <div class="bio-grid">
+                <div class="bio-text hidden">
+                    <h3>Estêvão Chissano</h3>
+                    <p>Estêvão Chissano, nascido em 1994, é membro do Xiquitsi desde 2014 nas classes de Coro, Composição e Direcção. No Coro, teve orientação de Maria Guimarães, Carlos Pereira, Lunathi Ncamani, Kendra Balmer e Ágata Ricca e participou em workshops orientados por Sara Braga Simões, Job Tomé, Martin Berger, Maria João, Lenna Bahule. Na Direcção estudou com Cesário Costa, José Eduardo Gomes, Cláudio Pereira, David Gómez, Ângelo Rafael e Eduardo Torres. Iniciou a Composição com Daniel Moreira e Filipe Fernandes e teve contacto com Carlos Marecos, Luís Tinoco, Sérgio Azevedo, Carlos Caires, Jaime Reis e Roberto Pérez.
+
+                    Realizou residências artísticas como beneficiário da Bolsa de Viagem do PROCULTURA em Portugal, Brasil e Cabo Verde. Foi indicado pelo Instituto Camões de Maputo para participar na 4ª Edição do Programa Jovens Compositores — Estúdios Vítor Córdona em Lisboa. Participou no 8th Sterkfontein Composers Meeting em África do Sul sob orientação de Michael Blake, que posteriormente o convidou para contribuir com uma peça para o seu projecto discográfico Bow Project 2 – Bowscapes – In memory of Jürgen Bräuninger.
+                    As suas composições têm sido apresentadas no Japão, Brasil, Reino Unido, Portugal, Noruega, África do Sul e Cabo Verde, bem como nas Temporadas de Música Clássica em Maputo. Actualmente é Coordenador Artístico/Pedagógico do Xiquitsi e professor de Formação Musical.</p>
+                    <ul class="bio-stats">
+                        <li><strong></strong> Composições</li>
+                    </ul>
+                </div>
+                <div class="bio-container">
+                    <div class="bio-img">
+                        <img src="img/estevao.jpg" alt="Estêvão Chissano">
+                        
+                        <div class="autordafoto">
+                            
+                            <p><div class="copy" style="font-size: 1em;">&copy </div><span style="color: #d4af37;"> Júlio Dengucho</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title hidden">Contacto</h2>
+            <div class="contact-wrapper hidden">
+                <form action="https://formsubmit.co/chissasestevaodoacacio@gmail.com" class="contact-form" method="post">
+                    <div class="input-group">
+                        <input type="text" name="Nome" placeholder="Seu Nome" required>
+                        <input type="email"  name="Email" placeholder="Seu E-mail" required>
+                    </div>
+                    <input type="text" name="Assunto" placeholder="Assunto (Ex: Encomenda de Obra, Concerto)" required>
+                    <textarea placeholder="Sua mensagem..." name="Mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/obrigado.html">
+                    <input type="hidden" name="_subject" value="Contacto pelo site de Estêvão Chissano">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                </form>
+                <div class="contact-info">
+                    <h3>Assessoria</h3>
+                    <p><i class="fas fa-envelope"></i><a href="mailto:chissasestevaodoacacio@gmail.com">chissasestevaodoacacio@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i><a href="tel:+258843123456">+258 820887082</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/estevao.chissano"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@estevaofilipechissano"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Estêvão Chissano. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/biografia.js"></script>
+</body>
+</html>
